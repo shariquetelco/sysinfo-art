@@ -1,0 +1,25 @@
+[package]
+name = "sysinfo-art"
+version = "0.1.0"
+edition = "2021"
+description = "A living ASCII landscape driven by your system's vital signs"
+license = "MIT"
+repository = "https://github.com/shariquetelco/sysinfo-art"
+homepage = "https://github.com/shariquetelco/sysinfo-art"
+keywords = ["terminal", "ascii", "system-monitor", "tui", "visualization"]
+categories = ["command-line-utilities", "visualization"]
+readme = "README.md"
+authors = ["shariquetelco"]
+
+[dependencies]
+ratatui = "0.29"
+crossterm = "0.28"
+sysinfo = "0.33"
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true
