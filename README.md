@@ -11,6 +11,10 @@
 [![Build](https://img.shields.io/github/actions/workflow/status/shariquetelco/sysinfo-art/ci.yml?style=flat-square)](https://github.com/shariquetelco/sysinfo-art/actions)
 [![GitHub Stars](https://img.shields.io/github/stars/shariquetelco/sysinfo-art?style=flat-square&color=yellow)](https://github.com/shariquetelco/sysinfo-art/stargazers)
 
+<br/>
+
+<img src="gif.gif" alt="sysinfo-art live demo" width="800" />
+
 </div>
 
 ---
@@ -48,6 +52,12 @@
 ## What is sysinfo-art?
 
 `sysinfo-art` is a **Rust terminal application** that reads your system's live hardware metrics and renders them as an animated ASCII landscape.
+
+<div align="center">
+<img src="img.png" alt="sysinfo-art screenshot" width="750" />
+</div>
+
+<br/>
 
 | Metric | Visual |
 |--------|--------|
@@ -137,7 +147,7 @@ sysinfo-art/
 
 ## Roadmap
 
-- [ ] Demo GIF in README
+- [x] Demo GIF in README
 - [ ] Publish to crates.io
 - [ ] Config file (`~/.config/sysinfo-art/config.toml`)
 - [ ] Themes: `cyberpunk`, `nature`, `monochrome`
